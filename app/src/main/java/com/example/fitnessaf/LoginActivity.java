@@ -32,6 +32,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         number= findViewById(R.id.number);
         countryCodePicker= findViewById(R.id.countryCodePicker);
         otp= findViewById(R.id.otp);

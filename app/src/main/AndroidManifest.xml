@@ -10,9 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FitnessAf">
         <activity android:name=".OTPforLogin"></activity>
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".LoginActivity"
+            android:parentActivityName=".LoginOrRegister"/>
         <activity android:name=".EnterOTP" />
-        <activity android:name=".FirstPage" />
+        <activity android:name=".FirstPage"
+            android:theme="@style/Theme.FitnessAf.NoActionBar"/>
         <activity android:name=".Register" />
         <activity android:name=".LoginOrRegister" />
         <activity android:name=".Intro" />

@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,7 +13,8 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginOrRegister extends AppCompatActivity {
 
-    Button login, account;
+    Button login;
+    TextView account;
     FirebaseAuth fAuth;
 
     @Override
