@@ -10,4 +10,19 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+
+    <string-array name="gender">
+
+        <item>Male</item>
+        <item>Female</item>
+
+    </string-array>
+
+    <string-array name="activity">
+
+        <item>sedentary life (not more than 2 times a week)</item>
+        <item>moderately active (excersize 2-4 times a week)</item>
+        <item>very active ( Daily excersize)</item>
+
+    </string-array>
 </resources>

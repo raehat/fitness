@@ -10,7 +10,7 @@ public class SecondViewModel extends ViewModel {
 
     public SecondViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Doodh");
+        mText.setValue("second");
     }
 
     public LiveData<String> getText() {

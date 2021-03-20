@@ -8,19 +8,29 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class FirstPage extends AppCompatActivity {
 
     FirebaseAuth firebaseAuth;
+    FirebaseFirestore fstore;
     private AppBarConfiguration mAppBarConfiguration;
+    public static boolean var= true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +38,11 @@ public class FirstPage extends AppCompatActivity {
         setContentView(R.layout.activity_first_page);
 
         firebaseAuth= FirebaseAuth.getInstance();
+        fstore= FirebaseFirestore.getInstance();
+
+        if (var){
+            startActivity(new Intent(getApplicationContext(), Details.class));
+        }
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

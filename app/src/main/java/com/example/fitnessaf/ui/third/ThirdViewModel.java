@@ -10,7 +10,7 @@ public class ThirdViewModel extends ViewModel {
 
     public ThirdViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Imran ke mamme");
+        mText.setValue("third");
     }
 
     public LiveData<String> getText() {
